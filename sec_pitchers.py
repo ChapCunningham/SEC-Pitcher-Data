@@ -21,7 +21,8 @@ def load_data(file_path):
 # File path for 2025 Season data
 season_file_path = "OKL_SOO_filtered.csv"
 season_df = load_data(season_file_path)
-season_df = season_df[season_df[PitcherTeam] == 'OKL_SOO']
+season_df = season_df[season_df["PitcherTeam"] == 'OKL_SOO']
+
 
 # Convert numeric columns
 numeric_columns = ['RelSpeed', 'SpinRate', 'Tilt', 'RelHeight', 'RelSide', 
