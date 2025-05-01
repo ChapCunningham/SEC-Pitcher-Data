@@ -19,7 +19,7 @@ def load_data(file_path):
     return df
 
 # File path for 2025 Season data
-season_file_path = "BrewsterPitchers_College_2025.csv"
+season_file_path = "OKL_SOO_filtered.csv"
 season_df = load_data(season_file_path)
 
 # Convert numeric columns
@@ -29,8 +29,8 @@ for col in numeric_columns:
     season_df[col] = pd.to_numeric(season_df[col], errors='coerce')
 
 # === LOAD ROLLING AND CLASS+ DATA ===
-rolling_path = "Brewster_2025_CLASS+_by_date.csv"
-class_plus_path = "Brewster_2025_CLASS+.csv"
+rolling_path = "OU_CLASS+_by_date.csv"
+class_plus_path = "OU_CLASS+.csv"
 
 rolling_df = load_data(rolling_path)
 class_plus_df = pd.read_csv(class_plus_path)
@@ -288,14 +288,14 @@ def load_class_plus_data(file_path):
     
     return df
 
-class_plus_file_path = "Brewster_2025_CLASS+.csv"
+class_plus_file_path = "class_plus_path"
 
 class_plus_df = load_class_plus_data(class_plus_file_path)
 
 
 
 
-season_class_plus_file_path = "Brewster_2025_CLASS+.csv"
+season_class_plus_file_path = "class_plus_path"
 
 #
 
