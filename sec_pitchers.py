@@ -48,7 +48,7 @@ class_plus_df["PitchType"] = class_plus_df["PitchType"].map({
 class_plus_df["Season"] = "2025 Season"
 
 # === STREAMLIT SETUP ===
-st.title("Brewster Pitcher Reports (2025 College Season)")
+st.title("OMBSB Opposing Pitcher Reports")
 st.sidebar.header("Filters")
 
 # Dropdowns
