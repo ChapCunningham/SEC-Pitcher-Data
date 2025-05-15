@@ -19,7 +19,7 @@ def load_data(file_path):
     return df
 
 # File path for 2025 Season data
-season_file_path = "MSU_BDG_filtered.csv"
+season_file_path = "AUB_TIG_filtered.csv"
 season_df = load_data(season_file_path)
 season_df = season_df[season_df["PitcherTeam"] == 'MSU_BDG']
 
@@ -31,8 +31,8 @@ for col in numeric_columns:
     season_df[col] = pd.to_numeric(season_df[col], errors='coerce')
 
 # === LOAD ROLLING AND CLASS+ DATA ===
-rolling_path = "MSU_CLASS+_by_date.csv"
-class_plus_path = "MSU_CLASS+.csv"
+rolling_path = "AUB_TIG_CLASS+_by_date.csv"
+class_plus_path = "AUB_TIG_CLASS+.csv"
 
 rolling_df = load_data(rolling_path)
 class_plus_df = pd.read_csv(class_plus_path)
