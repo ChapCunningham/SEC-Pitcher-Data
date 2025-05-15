@@ -21,7 +21,7 @@ def load_data(file_path):
 # File path for 2025 Season data
 season_file_path = "AUB_TIG_filtered.csv"
 season_df = load_data(season_file_path)
-season_df = season_df[season_df["PitcherTeam"] == 'MSU_BDG']
+season_df = season_df[season_df["PitcherTeam"] == 'AUB_TIG']
 
 
 # Convert numeric columns
